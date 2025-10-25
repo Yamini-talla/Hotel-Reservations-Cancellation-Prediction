@@ -3,23 +3,26 @@ Project Overview:
 The goal of the Hotel Reservations Cancellation Prediction project is to anticipate potential reservation cancellations by analyzing various features and variables associated with hotel bookings. In the context of the project, online hotel reservation channels have revolutionized booking methods and customer behavior. However, a significant number of reservations are canceled, leading to revenue loss for hotels. Cancellations occur for reasons such as changes in plans or scheduling conflicts, often facilitated by the option of free or low-cost cancellations. This project seeks to predict such cancellations based on available data.
 Data Dictionary:
 Here is a data dictionary summarizing the key columns in the dataset:
-| **Column** | **Description** |
-|-------------|-----------------|
-| **ID** | Unique identifier for each patient |
-| **Age** | Age of the patient |
-| **Gender** | Gender of the patient |
-| **Hormonal Changes** | Whether the patient has undergone hormonal changes |
-| **Family History** | Whether the patient has a family history of osteoporosis |
-| **Race/Ethnicity** | Race or ethnicity of the patient |
-| **Body Weight** | Weight details of the patient |
-| **Calcium** | Calcium levels in the patient's body |
-| **Vitamin D** | Vitamin D levels in the patient's body |
-| **Physical Activity** | Physical activity details of the patient |
-| **Smoking** | Whether the patient smokes |
-| **Alcohol Consumption** | Whether the patient consumes alcohol |
-| **Medical Conditions** | Medical conditions of the patient |
-| **Medication** | Medication details of the patient |
-| **Prior Fracture** | Whether the patient has had a prior fracture |
+| **Column Name** | **Description** |
+|------------------|-----------------|
+| **Booking_ID** | Unique identifier of each booking |
+| **no_of_adults** | Number of adults |
+| **no_of_children** | Number of children |
+| **no_of_weekend_nights** | Number of weekend nights (Saturday or Sunday) |
+| **no_of_week_nights** | Number of weeknights (Monday to Friday) |
+| **meal_type** | Meal type booked by the customer |
+| **required_car_parking_spaces** | Does the customer require a car parking space? (0 - No, 1 - Yes) |
+| **lead_time** | Number of days between the booking date and arrival date |
+| **arrival_year** | Year of arrival |
+| **arrival_month** | Month of arrival |
+| **arrival_date** | Date of arrival |
+| **market_segment** | Market segment designation |
+| **repeated_guest** | Is the customer a repeated guest? (0 - No, 1 - Yes) |
+| **no_previous_cancellations** | Number of previous bookings canceled by the customer prior to the current booking |
+| **previous_bookings_not_canceled** | Number of previous bookings not canceled by the customer prior to the current booking |
+| **avg_price_per_room** | Average price per day of the reservation (in euros) |
+| **no_of_special_requests** | Total number of special requests made by the customer (e.g., high floor, view from the room, etc.) |
+| **booking_status** | Flag indicating if the booking was canceled or not |
 
 Conclusion:
 The exploratory data analysis of the Hotel Reservations Cancellation Prediction project revealed several key insights:
